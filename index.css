@@ -201,6 +201,30 @@ footer {
 }
 
 @media (max-width: 768px) {
+  
+  .btn-menu {
+    display: block;
+  }
+
+  #banner h1 {
+    font-size: 36px;
+  }
+
+  #banner p {
+    font-size: 18px;
+  }
+
+  #portfolio img {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  #contato label, #contato input, #contato textarea {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
   nav {
     flex-direction: column;
     align-items: center;
@@ -255,29 +279,6 @@ footer {
     flex-direction: column;
   }
 
-  .btn-menu {
-    display: block;
-  }
-
-  #banner h1 {
-    font-size: 36px;
-  }
-
-  #banner p {
-    font-size: 18px;
-  }
-
-  #portfolio img {
-    width: 100%;
-    margin: 20px 0;
-  }
-
-  #contato label, #contato input, #contato textarea {
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
   #banner h1 {
     font-size: 24px;
   }
