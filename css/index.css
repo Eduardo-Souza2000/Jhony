@@ -20,14 +20,15 @@ nav ul  {
 }
 
 nav li {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 nav a {
   display: block;
   color: white;
   text-align: center;
-  padding: 1rem;
+  font-size: 2rem;
+  padding: 2rem;
   text-decoration: none;
 }
 
@@ -45,14 +46,16 @@ nav a:hover {
 }
 
 #banner h1 {
-  font-size: 48px;
+  font-weight: 900;
+  font-size: 50px;
   margin-bottom: 20px;
   color:#333333;
 }
 
 #banner p {
   color:#333333;
-  font-size: 24px;
+  font-size: 800;
+  font-size: 15px;
   margin-bottom: 40px;
 }
 
@@ -76,7 +79,9 @@ nav a:hover {
 }
 
 #portfolio h2 {
-  font-size: 36px;
+  font-weight: 900;
+  font-size: 50px;
+  font-weight: bold;
   margin-bottom: 40px;
 }
 
@@ -91,13 +96,15 @@ nav a:hover {
 .sobreNos-titulo{
   display: flex;
   justify-content: center;
-  width: 40vw;
+  font-weight: 900;
+  width: 60vw;
   font-size: 36px;
 	margin-bottom: 20px;
 }
 
 .sobreNos-texto{
-  width: 40vw;
+  width: 60vw;
+  font-size: 30px;
   text-align: justify;
   margin-bottom: 20px;
 }
