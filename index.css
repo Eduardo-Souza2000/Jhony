@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+body{
+  font-family: 'Karla';
+}
+nav  {
+  width: 100vw;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul  {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+#banner {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+  color: #FFFFFF;
+}
+
+#banner h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color:#333333;
+}
+
+#banner p {
+  color:#333333;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.btn-saiba-mais {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #0077CC;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-saiba-mais:hover {
+  background-color: #0066AA;
+}
+
+#portfolio {
+  text-align: center;
+  padding: 50px 0;
+}
+
+#portfolio h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+#sobreNos{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+
+.sobreNos-titulo{
+  display: flex;
+  justify-content: center;
+  width: 40vw;
+  font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.sobreNos-texto{
+  width: 40vw;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.carousel img {
+  width: 300px;
+  margin: 20px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.carousel img:hover {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+#contato {
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 50px 0;
+}
+
+#contato h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+#contato form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contato label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#contato input, #contato textarea {
+  width: 25vw;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#contato textarea {
+  height: 15vh;
+}
+
+#contato button {
+  padding: 10px 30px;
+  background-color: #0077CC;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+  border: none;
+}
+
+#contato button:hover {
+  background-color: #0066AA;
+}
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #08f05d;
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  line-height: 60px;
+  z-index: 9999;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.btn-whatsapp:hover {
+  opacity: 0.8;
+}
+
+footer {
+  background-color: #333333;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 10vh;
+  padding: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 0;
+    width: 100%;
+  }
+
+  nav a {
+    padding: 1rem 0;
+    border-bottom: 1px solid white;
+  }
+
+  nav a:hover {
+    background-color: #555;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .menu-toggle:hover {
+    color: #aaa;
+  }
+
+  .menu-toggle .fa-bars {
+    display: block;
+  }
+
+  .menu-toggle .fa-times {
+    display: none;
+  }
+
+  .menu-toggle.open .fa-bars {
+    display: none;
+  }
+
+  .menu-toggle.open .fa-times {
+    display: block;
+  }
+
+  nav ul.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-menu {
+    display: block;
+  }
+
+  #banner h1 {
+    font-size: 36px;
+  }
+
+  #banner p {
+    font-size: 18px;
+  }
+
+  #portfolio img {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  #contato label, #contato input, #contato textarea {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  #banner h1 {
+    font-size: 24px;
+  }
+
+  #banner p {
+    font-size: 16px;
+  }
+
+  #portfolio h2 {
+    font-size: 24px;
+  }
+
+  #contato h2 {
+    font-size: 24px;
+  }
+
+  #contato label, #contato input, #contato textarea {
+    width: 100%;
+  }
+
+  .carousel img {
+    width: 100%;
+  }
+
+  .btn-saiba-mais, .btn-whatsapp {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+}
