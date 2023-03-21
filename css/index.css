@@ -109,14 +109,14 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-.carousel {
+#carousel {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.carousel img {
+#carousel img {
   width: 300px;
   margin: 20px;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
@@ -124,7 +124,7 @@ nav a:hover {
   transition: box-shadow 0.2s ease-in-out;
 }
 
-.carousel img:hover {
+#carousel img:hover {
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -235,15 +235,12 @@ footer {
   nav {
     flex-direction: column;
     align-items: center;
-  }
-
-  nav li {
-    margin: 0;
-    width: 100%;
+    width: 100vw;
   }
 
   nav a {
-    padding: 1rem 0;
+    font-size: 4vw;
+    padding: 0.5rem 0;
     border-bottom: 1px solid white;
   }
 
@@ -251,67 +248,51 @@ footer {
     background-color: #555;
   }
 
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    top: 0.5rem;
-    right: 1rem;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-
-  .menu-toggle:hover {
-    color: #aaa;
-  }
-
-  .menu-toggle .fa-bars {
-    display: block;
-  }
-
-  .menu-toggle .fa-times {
-    display: none;
-  }
-
-  .menu-toggle.open .fa-bars {
-    display: none;
-  }
-
-  .menu-toggle.open .fa-times {
-    display: block;
-  }
-
-  nav ul.open {
-    display: flex;
-    flex-direction: column;
-  }
-
   #banner h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   #banner p {
-    font-size: 16px;
+    font-size: 8px;
+  }
+  
+  .sobreNos-titulo{
+    font-size: 8vw;
+  }
+  
+  .sobreNos-texto{
+    width: 80vw;
+    font-size: 3vw;
   }
 
   #portfolio h2 {
-    font-size: 24px;
+    font-size: 8vw;
   }
 
   #contato h2 {
-    font-size: 24px;
+    font-size: 8vw;
   }
 
   #contato label, #contato input, #contato textarea {
-    width: 100%;
+    width: 60vw;
   }
 
-  .carousel img {
-    width: 100%;
+  #carousel img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50vw;
+    
   }
 
-  .btn-saiba-mais, .btn-whatsapp {
-    font-size: 14px;
+  .btn-saiba-mais {
+    font-size: 8px;
     padding: 5px 15px;
+  }
+
+  .btn-whatsapp {
+    font-size: 8vw;
+    padding: 1px 1px;
   }
 }
